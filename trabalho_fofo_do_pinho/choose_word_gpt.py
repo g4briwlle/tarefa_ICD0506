@@ -4,9 +4,7 @@ from openai import OpenAI
 
 
 def gpt_word(lingua, dificuldade, tamanho):
-    OpenAI.api_key = "chave"
-
-    client = OpenAI(api_key=chave)
+    client = OpenAI(api_key="chave")
 
     prompt = [{"role": "user", "content": f"Chat, seu trabalho é gerar uma palavra na língua {lingua} que seja de {dificuldade} dificuldade e tenha {tamanho} letras. o resultado gerado precisa ser apenas a palavra, sem nenhum comentário antes ou depois e a palavra precisa ter seus acentos removidos."}]
 
